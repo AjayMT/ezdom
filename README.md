@@ -36,7 +36,7 @@ $ bower install ezdom
 
 Or download `./lib/ezdom.js` and put it in a script tag.
 
-**Note: ** EZDOM depends on jQuery (for now), so you will need to include jQuery before including EZDOM.
+**Note:** EZDOM depends on jQuery (for now), so you will need to include jQuery before including EZDOM.
 
 ## API
 ### EZDOM.updateElement(left, right)
