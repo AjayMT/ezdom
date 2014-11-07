@@ -1,0 +1,17 @@
+
+{
+  "name": "ezdom",
+  "version": "0.0.1",
+  "description": "Simple DOM manipulation",
+  "dependencies": {
+    "jquery": "2.1.1"
+  },
+  "main": "lib/ezdom.js",
+  "author": "Ajay MT <ajay.tatachar@gmail.com> (http://ajaymt.github.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/AjayMT/ezdom.git"
+  },
+  "keywords": ["dom", "manipulation", "web", "cheese"]
+}
