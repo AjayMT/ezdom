@@ -8,7 +8,7 @@ Here's an example:
 var theDiv = document.querySelector('.some-div');
 
 // this will change theDiv.innerHTML
-EZDOM.updateElement(theDiv, 'a <em>string</em> of <strong>HTML</strong>');
+EZDOM.updateElement(theDiv, '<div>a <em>string</em> of <strong>HTML</strong></div>');
 
 var theNewDiv = document.createElement('div');
 theNewDiv.innerHTML = theDiv.innerHTML;
@@ -37,6 +37,11 @@ $ bower install ezdom
 Or download `./lib/ezdom.js` and put it in a script tag.
 
 **Note:** EZDOM depends on jQuery (for now), so you will need to include jQuery before including EZDOM.
+
+## Running tests
+```sh
+$ npm test
+```
 
 ## API
 ### EZDOM.updateElement(left, right)

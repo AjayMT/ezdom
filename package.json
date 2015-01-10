@@ -6,6 +6,15 @@
   "dependencies": {
     "jquery": "2.1.1"
   },
+  "devDependencies": {
+    "nightmare": "1.6.5",
+    "mocha": "2.1.0",
+    "should": "4.4.4",
+    "phantomjs": "1.9.13"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
   "main": "lib/ezdom.js",
   "author": "Ajay MT <ajay.tatachar@gmail.com> (http://ajaymt.github.com)",
   "license": "MIT",
