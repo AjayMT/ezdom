@@ -1,5 +1,7 @@
 
 # ezdom
+[![Build Status](https://travis-ci.org/AjayMT/ezdom.svg)](https://travis-ci.org/AjayMT/ezdom)
+
 Simple, efficient DOM manipulation, used by [Cheese](http://npmjs.org/cheese).
 
 Here's an example:
