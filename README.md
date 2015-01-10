@@ -8,10 +8,6 @@ Here's an example:
 
 ```javascript
 var theDiv = document.querySelector('.some-div');
-
-// this will change theDiv.innerHTML
-EZDOM.updateElement(theDiv, '<div>a <em>string</em> of <strong>HTML</strong></div>');
-
 var theNewDiv = document.createElement('div');
 theNewDiv.innerHTML = theDiv.innerHTML;
 theNewDiv.appendChild(document.createTextNode('hello'));
@@ -21,7 +17,7 @@ theNewDiv.appendChild(document.createTextNode('hello'));
 EZDOM.updateElement(theDiv, theNewDiv);
 ```
 
-EZDOM is fairly efficient and updates only what it needs to instead of redrawing whole elements. As a result of this, it is the best for small, frequent DOM updates.
+EZDOM is fairly efficient and updates only what it needs to instead of redrawing whole elements. As a result of this, it is best for small, frequent DOM updates.
 
 ## Installation
 via npm:
@@ -38,8 +34,6 @@ $ bower install ezdom
 
 Or download `./lib/ezdom.js` and put it in a script tag.
 
-**Note:** EZDOM depends on jQuery (for now), so you will need to include jQuery before including EZDOM.
-
 ## Running tests
 ```sh
 $ npm test
@@ -47,7 +41,7 @@ $ npm test
 
 ## API
 ### EZDOM.updateElement(left, right)
-Update the element `left` so that it matches `right`. `left` must be a DOM element, `right` can be a DOM element, a string of HTML, or a jQuery object.
+Update the element `left` so that it matches `right`. `left` and `right` must be DOM elements.
 
 ## License
 MIT License. See `./LICENSE` for details.
