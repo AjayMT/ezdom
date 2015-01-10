@@ -14,16 +14,19 @@ describe('ezdom', function () {
   });
 
   it('should refresh the dom', function (done) {
+    var h1;
+
     new Nightmare()
     .goto('http://localhost:3000')
     .evaluate(function () {
-      return document.querySelector('h1').innerText;
+      h1 = document.querySelector('h1');
+      return h1.innerText;
     }, function (text) {
       text.should.equal('Hello, world');
     })
     .click('#refresh')
     .evaluate(function () {
-      return document.querySelector('h1').innerText;
+      return h1.innerText;
     }, function (text) {
       text.should.equal('EZDOM');
     })

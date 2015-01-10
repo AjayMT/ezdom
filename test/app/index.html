@@ -16,13 +16,13 @@
       function change () {
         var h1 = $('h1');
         var newh1 = $('<h1>EZDOM</h1>');
-        EZDOM.updateElement(h1, newh1);
+        EZDOM.updateElement(h1[0], newh1[0]);
       }
 
       function undo () {
         var h1 = $('h1');
         var newh1 = $('<h1>Hello, world</h1>');
-        EZDOM.updateElement(h1, newh1);
+        EZDOM.updateElement(h1[0], newh1[0]);
       }
     </script>
   </body>
