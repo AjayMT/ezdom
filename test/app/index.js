@@ -10,7 +10,14 @@ var jquery = path.join(__dirname, '..', '..', 'node_modules', 'jquery', 'dist',
                        'jquery.min.js');
 
 var server = http.createServer(function (req, res) {
-  if (req.url !== '/') {
+  if (req.url === '/jquery.min.map') {
+    res.writeHead(200);
+    res.end();
+
+    return;
+  }
+
+  if (req.url === '/js') {
     fs.readFile(jquery, function (err, jq) {
       if (err) throw err;
 
@@ -25,9 +32,11 @@ var server = http.createServer(function (req, res) {
     return;
   }
 
+  var html = req.url.split('/')[1] || 'change.html';
+
   res.writeHead(200, { 'content-type': 'text/html' });
 
-  fs.readFile(path.join(__dirname, 'index.html'), function (err, data) {
+  fs.readFile(path.join(__dirname, html), function (err, data) {
     if (err) throw err;
 
     res.end(data);
