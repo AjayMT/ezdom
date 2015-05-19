@@ -2,9 +2,7 @@
 # ezdom
 [![Build Status](https://travis-ci.org/AjayMT/ezdom.svg)](https://travis-ci.org/AjayMT/ezdom)
 
-Simple, efficient DOM manipulation, used by [Cheese](http://npmjs.org/cheese).
-
-Here's an example:
+Simple DOM manipulation.
 
 ```javascript
 var theDiv = document.querySelector('.some-div');
@@ -17,7 +15,7 @@ theNewDiv.appendChild(document.createTextNode('hello'));
 EZDOM.updateElement(theDiv, theNewDiv);
 ```
 
-EZDOM is fairly efficient and updates only what it needs to instead of redrawing whole elements. As a result of this, it is best for small, frequent DOM updates.
+EZDOM tries to be as efficient as possible and doesn't redraw the whole DOM every time it updates it. This makes it great for small, frequent updates.
 
 ## Installation
 via npm:

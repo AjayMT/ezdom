@@ -1,8 +1,8 @@
 
 {
   "name": "ezdom",
-  "version": "0.0.3",
-  "description": "Simple DOM manipulation",
+  "version": "0.0.4",
+  "description": "simple DOM manipulation",
   "devDependencies": {
     "jquery": "2.1.1",
     "nightmare": "1.6.5",
@@ -20,5 +20,5 @@
     "type": "git",
     "url": "http://github.com/AjayMT/ezdom.git"
   },
-  "keywords": ["dom", "manipulation", "web", "cheese"]
+  "keywords": ["dom", "manipulation", "web"]
 }

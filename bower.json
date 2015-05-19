@@ -1,10 +1,11 @@
+
 {
   "name": "ezdom",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "authors": [
     "Ajay MT <ajay.tatachar@gmail.com> (http://ajaymt.github.com)"
   ],
-  "description": "Simple DOM manipulation",
+  "description": "simple DOM manipulation",
   "main": "./lib/ezdom.js",
   "moduleType": [
     "node"
@@ -12,8 +13,7 @@
   "keywords": [
     "dom",
     "manipulation",
-    "browser",
-    "cheese"
+    "browser"
   ],
   "license": "MIT",
   "homepage": "http://github.com/AjayMT/ezdom",
